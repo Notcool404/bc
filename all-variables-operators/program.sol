@@ -75,6 +75,76 @@ contract Solidity_Logical {
     }
 }
 
+// Solidity program to demonstrate
+// Bitwise Operator
+pragma solidity ^0.5.0;
+
+// Creating a contract
+contract SolidityTest {
+    // Declaring variables
+    uint16 public a = 20;
+    uint16 public b = 10;
+    // to '&' value
+    uint16 public and = a & b;
+    // Initializing a variable
+    // to '|' value
+    uint16 public or = a | b;
+    // Initializing a variable
+    // to '^' value
+    uint16 public xor = a ^ b;
+    // Initilizing a variable
+    // to '<<' value
+    uint16 public leftshift = a << b;
+    // Initializing a variable
+    // to '>>' value
+    uint16 public rightshift = a >> b;
+    // Initializing a variable
+    // to '~' value
+    uint16 public not = ~a;
+}
+
+//Assignment Operator
+// Solidity program to demonstrate
+// Assignment Operator
+pragma solidity ^0.5.0;
+
+// Creating a contract
+contract SolidityTest {
+    // Declaring variables
+    uint16 public assignment = 20;
+    uint256 public assignment_add = 50;
+    uint256 public assign_sub = 50;
+    uint256 public assign_mul = 10;
+    uint256 public assign_div = 50;
+    uint256 public assign_mod = 32;
+
+    // Defining function to
+    // demonstrate Assignment Operator
+    function getResult() public {
+        assignment_add += 10;
+        assign_sub -= 20;
+        assign_mul *= 10;
+        assign_div /= 10;
+        assign_mod %= 20;
+        return;
+    }
+}
+
+//Conditional Operators
+// Solidity program to demonstrate
+// Conditional Operator
+pragma solidity ^0.5.0;
+
+// Creating a contract
+contract SolidityTest {
+    // Defining function to demonstrate
+    // conditional operator
+    function sub(uint256 a, uint256 b) public view returns (uint256) {
+        uint256 result = (a > b ? a - b : b - a);
+        return result;
+    }
+}
+
 // Practical Title: While Loop
 contract Pract3_While {
     function test(int s, int e) public view returns(int) {
